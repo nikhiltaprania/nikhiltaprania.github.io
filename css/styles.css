@@ -421,10 +421,6 @@ body.dark-theme {
     justify-self: center;
 }
 
-.home__image {
-    width: 220px;
-}
-
 .home__img {
     position: relative;
     z-index: 10;
