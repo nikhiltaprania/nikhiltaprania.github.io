@@ -96,16 +96,16 @@ img {
     background-color: #0A66C2;
 }
 
-.instagram:hover {
-    background-color: #E1306C;
-}
-
 .whatsapp:hover {
     background-color: #25D366;
 }
 
 .github:hover {
     background-color: #000000;
+}
+
+.leetcode:hover {
+    background-color: #FFA116;
 }
 
 /*=============== THEME ===============*/
@@ -257,7 +257,7 @@ body.dark-theme {
     left: 0;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
-    transition: box-shadow .4s background-color .4s;
+    transition: box-shadow .4s, background-color .4s;
 }
 
 .nav {
@@ -769,6 +769,133 @@ body.dark-theme {
     }
 }
 
+/*=============== SKILLS TAGS ===============*/
+.skills__tags {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.skills__tags-title {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+}
+
+.skills__tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.skills__tags-list li {
+    border: 2px solid var(--black-color);
+    background-color: var(--body-color);
+    color: var(--title-color);
+    padding: 0.4rem 0.9rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: background-color .3s, border-color .3s, color .3s;
+}
+
+.skills__tags-list li:hover {
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+    color: var(--black-color);
+}
+
+/*=============== EXPERIENCE & EDUCATION ===============*/
+.experience {
+    background-color: var(--container-color);
+    transition: background-color .4s;
+}
+
+.experience__container,
+.education__container {
+    row-gap: 1.5rem;
+}
+
+.experience__card,
+.education__card {
+    background-color: var(--body-color);
+    border-left: 4px solid var(--first-color);
+    padding: 1.5rem 1.5rem 1.25rem;
+    transition: background-color .4s, transform .4s;
+}
+
+.experience__card:hover,
+.education__card:hover {
+    transform: translateY(-0.25rem);
+}
+
+.experience__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+}
+
+.experience__role {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+
+.experience__company {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    transition: color .3s;
+}
+
+.experience__company:hover {
+    color: var(--title-color);
+}
+
+.experience__meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__date {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.experience__place {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.experience__list {
+    display: grid;
+    row-gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.experience__item {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.experience__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--first-color);
+    rotate: 45deg;
+}
+
 /*=============== PROJECTS ===============*/
 .projects {
     background-color: var(--container-color);
@@ -1232,6 +1359,21 @@ For small devices */
 
     .projects__container {
         grid-template-columns: repeat(2, 350px);
+    }
+
+    .experience__container {
+        max-width: 800px;
+        margin-inline: auto;
+    }
+
+    .education__container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin-inline: auto;
+    }
+
+    .experience__meta {
+        text-align: right;
     }
 }
 
