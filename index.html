@@ -592,7 +592,7 @@
                             double-entry ledger. It uses idempotency keys and an orchestrated Saga with compensating
                             transactions to keep transfers consistent on failure, with asynchronous payments over Apache
                             Kafka using the Transactional Outbox pattern, Resilience4j fault tolerance, RS256 JWT
-                            security, PIN-based 2FA, and Redis-backed reads.
+                            security, PIN-based 2FA, and a materialized balance model for fast reads.
                         </p>
                     </div>
 
