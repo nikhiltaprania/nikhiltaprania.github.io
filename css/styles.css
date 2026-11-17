@@ -59,6 +59,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -68,6 +69,13 @@ body {
     color: var(--text-color);
     transition: background-color .4s;
     /* For dark mode */
+}
+
+/* Guard against any accidental horizontal scroll / mobile zoom-out */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 h1,
@@ -106,6 +114,10 @@ img {
 
 .leetcode:hover {
     background-color: #FFA116;
+}
+
+.email:hover {
+    background-color: #EA4335;
 }
 
 /*=============== THEME ===============*/
@@ -153,7 +165,7 @@ body.dark-theme {
             hsla(103, 97%, 49%, 0));
 }
 
-.dark-theme :is(.home__scroll-box i, .button__ghost, .services__icon i) {
+.dark-theme :is(.home__scroll-box i, .button__ghost) {
     color: var(--white-color);
 }
 
@@ -500,6 +512,12 @@ body.dark-theme {
             hsla(103, 97%, 49%, 0));
 }
 
+.home__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
 .home__scroll {
     display: block;
     width: max-content;
@@ -669,12 +687,6 @@ body.dark-theme {
     top: 0.5rem;
 }
 
-.about__list {
-    list-style: square;
-    color: var(--title-color);
-    margin-bottom: 3rem;
-}
-
 .about__buttons {
     display: flex;
     justify-content: center;
@@ -805,6 +817,26 @@ body.dark-theme {
 .skills__tags-list li:hover {
     background-color: var(--first-color);
     border-color: var(--first-color);
+    color: var(--black-color);
+}
+
+.skills__soft {
+    margin-top: 2.5rem;
+}
+
+.skills__soft .skills__tags-list li {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.skills__soft .skills__tags-list li i {
+    font-size: 1rem;
+    color: var(--first-color);
+    transition: color .3s;
+}
+
+.skills__soft .skills__tags-list li:hover i {
     color: var(--black-color);
 }
 
@@ -945,11 +977,6 @@ body.dark-theme {
     position: absolute;
     top: 50%;
     left: 0;
-}
-
-.projects_title {
-    font-size: var(--h3-font-size);
-    margin-bottom: .75rem;
 }
 
 .projects__buttons {
@@ -1198,8 +1225,10 @@ body.dark-theme {
 
 .footer__links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 2rem;
+    row-gap: 0.75rem;
 }
 
 .footer__link {
@@ -1294,6 +1323,36 @@ For small devices */
     }
 }
 
+/* Small phones: simple full-width stack for contact (kills the desktop grid offsets that overflowed) */
+@media screen and (max-width: 575px) {
+    .contact__container {
+        display: block;
+    }
+
+    .contact__data,
+    .contact__mail,
+    .contact__social {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact__data {
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__data .section__title-2 {
+        transform: translateX(0);
+    }
+
+    .contact__mail {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+}
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
     .home__img {
@@ -1374,6 +1433,52 @@ For small devices */
 
     .experience__meta {
         text-align: right;
+    }
+}
+
+/* Tablet only: home & about use the wider viewport with a 2-column layout
+   instead of a narrow phone-width column (reset again at the 1150px desktop layout) */
+@media screen and (min-width: 768px) and (max-width: 1149px) {
+    .home__container {
+        grid-template-columns: 1fr 300px;
+        align-items: center;
+        gap: 1rem 3rem;
+        max-width: 760px;
+        margin-inline: auto;
+    }
+
+    .home__name {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .home__info {
+        margin-top: 0;
+    }
+
+    .home__description {
+        text-align: left;
+    }
+
+    .home__perfil {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .about__container {
+        grid-template-columns: 300px 1fr;
+        align-items: center;
+        column-gap: 3rem;
+        max-width: 760px;
+        margin-inline: auto;
+    }
+
+    .about__perfil {
+        margin-block: 0;
+    }
+
+    .about__container .section__title-1 {
+        grid-column: 1 / -1;
     }
 }
 
@@ -1496,8 +1601,13 @@ For small devices */
     .home__description {
         position: relative;
         font-size: var(--h2-font-size);
-        margin-bottom: 5.5rem;
+        margin-bottom: 2.5rem;
         padding-left: 3rem;
+    }
+
+    .home__buttons {
+        justify-content: flex-start;
+        margin-bottom: 3rem;
     }
 
     .home__description::after {
@@ -1539,13 +1649,13 @@ For small devices */
 
     .home__arrow {
         top: 4.5rem;
-        left: -8rem;
+        left: -6rem;
         rotate: 80deg;
         width: 80px;
     }
 
     .home__line {
-        left: -15rem;
+        left: -5rem;
         bottom: 4rem;
         width: 80px;
         rotate: 30deg;
@@ -1626,10 +1736,6 @@ For small devices */
         height: 2px;
         left: -3rem;
         top: 14px;
-    }
-
-    .about__list {
-        margin-bottom: 5rem;
     }
 
     .about__buttons {

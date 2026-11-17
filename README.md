@@ -26,14 +26,15 @@ Built as a lightweight, dependency-free static site — no framework or build st
 
 - **Languages:** Java, SQL, JavaScript, HTML, CSS
 - **Backend:** Spring Boot, Spring Framework, Spring Security, Spring Data JPA, Hibernate, REST APIs, JWT, OAuth2,
-  Apache Kafka, Microservices, JSP, Servlets
-- **AI & Data:** Spring AI, RAG, Vector Search, PGVector, PostgreSQL, MySQL, Redis, Prompt Engineering, Local LLM
-- **Tools & Practices:** Docker, Maven, Postman, Git, IntelliJ IDEA, VS Code, OOP, Design Patterns, Low-Level
+  Microservices, Apache Kafka, Resilience4j, JSP, Servlets
+- **AI & Data:** Spring AI, RAG, Vector Search, PGVector, Flyway, PostgreSQL, MySQL, Redis, Prompt Engineering, LM Studio
+- **Tools & Practices:** Docker, Docker Compose, Maven, Postman, Git, OOP, Design Patterns, Low-Level
   Design (LLD), Clean Architecture, Agile
+- **Soft Skills:** Problem Solving, Ownership, Team Collaboration, Communication, Adaptability, Continuous Learning
 
 ## Experience
 
-- **Sunbase** — Java Developer (Aug 2024 – Present) · Remote
+- **Sunbase** — Java Developer (Aug 2024 – May 2026) · Remote
 - **PurpleDocs** — Full Stack Java Developer (Mar 2024 – Aug 2024) · Remote
 
 ## Featured Projects

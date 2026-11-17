@@ -30,7 +30,7 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css?v=20261116d">
 </head>
 
 <body>
@@ -51,12 +51,11 @@
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item"><a
-                            href="https://drive.google.com/drive/folders/1lfQokc_UW4tJUtL6UJhISAAXnfs7c0np?usp=drive_link"
-                            target="_blank" rel="noopener" class="nav__link nav__link-button">Resume</a></li>
+                    <li class="nav__item"><a id="resume-btn"
+                            href="https://drive.google.com/uc?export=download&amp;id=1cjVJ08UHQQA9qx5L7nbBMlFuIM8kA1_P"
+                            target="_blank" rel="noopener noreferrer" class="nav__link nav__link-button">Resume</a></li>
                 </ul>
 
                 <!-- Close button -->
@@ -97,17 +96,17 @@
 
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/nikhil-kumar-5bb7a52b9/" class="home__social-link linkedin"
-                            target="_blank" rel="noopener" aria-label="LinkedIn">
+                            target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
 
                         <a href="https://github.com/nikhiltaprania" class="home__social-link github" target="_blank"
-                            rel="noopener" aria-label="GitHub">
+                            rel="noopener noreferrer" aria-label="GitHub">
                             <i class="ri-github-line"></i>
                         </a>
 
                         <a href="https://leetcode.com/u/nikhiltaprania/" class="home__social-link leetcode"
-                            target="_blank" rel="noopener" aria-label="LeetCode">
+                            target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
                             <i class="ri-code-s-slash-line"></i>
                         </a>
                     </div>
@@ -115,15 +114,18 @@
 
                 <div class="home__info">
                     <p class="home__description">
-                        <b>Java Backend Developer</b> with a B.Tech in Electronics & Communication Engineering,
-                        specializing in building scalable, secure server-side applications with Java and the Spring
-                        ecosystem. I trained in Full Stack Web Development at <a
-                            href="https://www.masaischool.com/" target="_blank" rel="noopener">Masai School</a>. <br>
-                        Currently, I work
-                        as a Java Developer at <a href="https://www.sunbasedata.com/" target="_blank"
-                            rel="noopener">Sunbase</a>,
-                        building enterprise applications, REST APIs, and microservices.
+                        I'm a <b>Java Backend Developer</b> with professional experience building scalable backend
+                        applications, REST APIs, and distributed systems using Java and Spring Boot. I focus on
+                        designing clean, reliable services, and have recently been building AI-powered features with
+                        Spring AI and RAG.
                     </p>
+
+                    <div class="home__buttons">
+                        <a href="https://drive.google.com/file/d/1cjVJ08UHQQA9qx5L7nbBMlFuIM8kA1_P/preview"
+                            target="_blank" rel="noopener noreferrer" class="button">
+                            <i class="ri-file-text-line"></i> View Resume
+                        </a>
+                    </div>
 
                     <a href="#about" class="home__scroll">
                         <div class="home__scroll-box">
@@ -156,24 +158,27 @@
 
                 <div class="about__info">
                     <p class="about__description">
-                        I am a <b>Java Backend Developer</b> with around two years of experience building REST APIs,
-                        microservices, and event-driven systems using Java, Spring Boot, and Kafka. I work regularly
-                        with Spring Security, JWT, and OAuth2 for authentication, and PostgreSQL and Redis for data and
-                        caching. Recently, I have been building AI-powered features using Spring AI and RAG.
+                        I am a <b>Java Backend Developer</b> with around two years of professional experience across
+                        Sunbase and PurpleDocs, building and maintaining REST APIs, microservices, and distributed
+                        systems with Java, Spring Boot, and Kafka. I work with Spring Security, JWT, and OAuth2 for
+                        authentication, PostgreSQL and Redis for data and caching, and collaborate closely with frontend
+                        and QA teams to ship clean, maintainable, and reliable features. More recently, I have been
+                        building AI-powered features using Spring AI and RAG.
                     </p>
 
                     <div class="about__buttons">
-                        <a href="https://drive.google.com/drive/folders/1lfQokc_UW4tJUtL6UJhISAAXnfs7c0np?usp=drive_link"
-                            target="_blank" rel="noopener" class="button">
+                        <a href="https://drive.google.com/file/d/1cjVJ08UHQQA9qx5L7nbBMlFuIM8kA1_P/preview"
+                            target="_blank" rel="noopener noreferrer" class="button">
                             <i class="ri-eye-line"></i> View Resume
                         </a>
 
-                        <a href="resume/Nikhil-Kumar-Resume.pdf" download class="button__ghost"
-                            aria-label="Download Resume" title="Download Resume">
+                        <a href="https://drive.google.com/uc?export=download&amp;id=1cjVJ08UHQQA9qx5L7nbBMlFuIM8kA1_P"
+                            target="_blank" rel="noopener noreferrer" class="button__ghost" aria-label="Download Resume"
+                            title="Download Resume">
                             <i class="ri-download-2-line"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/nikhil-kumar-5bb7a52b9/" target="_blank" rel="noopener"
+                        <a href="https://www.linkedin.com/in/nikhil-kumar-5bb7a52b9/" target="_blank" rel="noopener noreferrer"
                             class="button__ghost linkedin" aria-label="LinkedIn">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
@@ -384,20 +389,38 @@
                 <ul class="skills__tags-list">
                     <li>REST APIs</li>
                     <li>Microservices</li>
+                    <li>Resilience4j</li>
                     <li>Spring Data JPA</li>
                     <li>JWT</li>
                     <li>OAuth2</li>
                     <li>PostgreSQL</li>
                     <li>PGVector</li>
+                    <li>Vector Search</li>
+                    <li>Prompt Engineering</li>
+                    <li>LM Studio</li>
+                    <li>Flyway</li>
                     <li>JSP</li>
                     <li>Servlets</li>
                     <li>Thymeleaf</li>
                     <li>AG-Grid</li>
                     <li>Git</li>
+                    <li>Docker Compose</li>
                     <li>Design Patterns</li>
                     <li>Low-Level Design</li>
                     <li>Clean Architecture</li>
                     <li>Agile</li>
+                </ul>
+            </div>
+
+            <div class="skills__tags skills__soft container">
+                <span class="skills__tags-title">Soft Skills</span>
+                <ul class="skills__tags-list">
+                    <li><i class="ri-lightbulb-line"></i> Problem Solving</li>
+                    <li><i class="ri-shield-check-line"></i> Ownership</li>
+                    <li><i class="ri-team-line"></i> Team Collaboration</li>
+                    <li><i class="ri-chat-3-line"></i> Communication</li>
+                    <li><i class="ri-refresh-line"></i> Adaptability</li>
+                    <li><i class="ri-book-open-line"></i> Continuous Learning</li>
                 </ul>
             </div>
         </section>
@@ -411,33 +434,37 @@
                     <div class="experience__header">
                         <div>
                             <h3 class="experience__role">Java Developer</h3>
-                            <a href="https://www.sunbasedata.com/" target="_blank" rel="noopener"
+                            <a href="https://www.sunbasedata.com/" target="_blank" rel="noopener noreferrer"
                                 class="experience__company">Sunbase</a>
                         </div>
                         <div class="experience__meta">
-                            <span class="experience__date">Aug 2024 &ndash; Present</span>
+                            <span class="experience__date">Aug 2024 &ndash; May 2026</span>
                             <span class="experience__place">Orlando, FL (Remote)</span>
                         </div>
                     </div>
 
                     <ul class="experience__list">
                         <li class="experience__item">
-                            Developed and maintained a large enterprise application built on Java, JSP, Servlets, and
-                            SQL, handling features and enhancements from design through to production.
+                            Independently owned backend features for a large enterprise application built on Java, Spring
+                            Boot, JSP, Servlets, and SQL, from implementation through to production deployment.
                         </li>
                         <li class="experience__item">
-                            Built reusable common components used across multiple modules, which reduced code
-                            duplication and improved overall maintainability.
+                            Developed and maintained REST APIs using Spring Boot for the Knockbase module and documented
+                            the implementation, and extended the platform-wide Snapshot framework with default snapshots
+                            and role-based assignments.
                         </li>
                         <li class="experience__item">
-                            Developed REST APIs using Spring Boot for the Knockbase module and extended the platform-wide
-                            Snapshot framework with default snapshots, role-based assignments, and other enhancements,
-                            along with technical documentation.
+                            Optimized SQL queries and updated database schemas for new requirements, tested APIs manually
+                            with Postman, and built reusable components shared across modules to reduce duplicated code.
                         </li>
                         <li class="experience__item">
-                            Migrated the platform from Flexi-Grid to AG-Grid using reusable grid components to display
-                            data across 100+ widgets, and added multilingual support (Hindi, Spanish, French) and action
-                            tracking in the Workflow modules.
+                            Migrated from Flexi-Grid to AG-Grid with reusable grid and popup components across 100+
+                            widgets, and added multilingual support (Hindi, Spanish, French) and workflow action tracking
+                            with audit visibility.
+                        </li>
+                        <li class="experience__item">
+                            Collaborated with frontend developers and QA engineers to clarify API contracts, verify
+                            workflows, and resolve issues before release.
                         </li>
                     </ul>
                 </article>
@@ -446,7 +473,7 @@
                     <div class="experience__header">
                         <div>
                             <h3 class="experience__role">Full Stack Java Developer</h3>
-                            <a href="https://www.purpledocs.com/" target="_blank" rel="noopener"
+                            <a href="https://www.purpledocs.com/" target="_blank" rel="noopener noreferrer"
                                 class="experience__company">PurpleDocs</a>
                         </div>
                         <div class="experience__meta">
@@ -478,7 +505,7 @@
                     <div class="experience__header">
                         <div>
                             <h3 class="experience__role">Full Stack Web Development</h3>
-                            <a href="https://www.masaischool.com/" target="_blank" rel="noopener"
+                            <a href="https://www.masaischool.com/" target="_blank" rel="noopener noreferrer"
                                 class="experience__company">Masai School</a>
                         </div>
                         <div class="experience__meta">
@@ -492,7 +519,7 @@
                     <div class="experience__header">
                         <div>
                             <h3 class="experience__role">B.Tech, Electronics &amp; Communication Engineering</h3>
-                            <a href="https://srgcmzn.com/" target="_blank" rel="noopener"
+                            <a href="https://srgcmzn.com/" target="_blank" rel="noopener noreferrer"
                                 class="experience__company">Shri Ram Group of Colleges</a>
                         </div>
                         <div class="experience__meta">
@@ -515,7 +542,7 @@
                             alt="AI Interview Coaching Platform preview" class="projects__img" loading="lazy">
 
                         <a href="https://drive.google.com/drive/folders/1AvUBpIcC3PYRydAtVIqKU9MxXp2wNR_G?usp=drive_link"
-                            class="projects__button button" target="_blank" rel="noopener" aria-label="Open live demo">
+                            class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="View project documentation">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -533,13 +560,13 @@
                     </div>
 
                     <div class="projects__buttons">
-                        <a href="https://github.com/nikhiltaprania/prepr" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> GitHub
+                        <a href="https://github.com/nikhiltaprania/prepr" target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-github-line"></i> Source Code
                         </a>
 
                         <a href="https://drive.google.com/drive/folders/1AvUBpIcC3PYRydAtVIqKU9MxXp2wNR_G?usp=drive_link"
-                            target="_blank" class="projects__link">
-                            <i class="ri-external-link-line"></i> View
+                            target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-file-text-line"></i> Documentation
                         </a>
                     </div>
                 </article>
@@ -551,7 +578,7 @@
                             loading="lazy">
 
                         <a href="https://drive.google.com/drive/folders/1Rj_BqfU-VjoIvYkeqtklqqieTt3hFxlc?usp=drive_link"
-                            class="projects__button button" target="_blank" rel="noopener" aria-label="Open live demo">
+                            class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="View project documentation">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -561,21 +588,22 @@
                         <h2 class="projects__title">Digital Wallet & Payment Processing Platform</h2>
 
                         <p class="projects__description">
-                            A distributed wallet built from 7 Spring Boot microservices with a PostgreSQL double-entry
-                            ledger, guaranteeing exactly-once transfers via idempotency and the Saga pattern.
-                            Asynchronous payments run through Apache Kafka using the Transactional Outbox pattern, with
-                            Resilience4j fault tolerance, RS256 JWT security, PIN-based 2FA, and Redis-backed reads.
+                            A distributed wallet built from 7 Spring Boot microservices with an immutable PostgreSQL
+                            double-entry ledger. It uses idempotency keys and an orchestrated Saga with compensating
+                            transactions to keep transfers consistent on failure, with asynchronous payments over Apache
+                            Kafka using the Transactional Outbox pattern, Resilience4j fault tolerance, RS256 JWT
+                            security, PIN-based 2FA, and Redis-backed reads.
                         </p>
                     </div>
 
                     <div class="projects__buttons">
-                        <a href="https://github.com/nikhiltaprania/digital-wallet" target="_blank" class="projects__link">
-                            <i class="ri-github-line"></i> GitHub
+                        <a href="https://github.com/nikhiltaprania/digital-wallet" target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-github-line"></i> Source Code
                         </a>
 
                         <a href="https://drive.google.com/drive/folders/1Rj_BqfU-VjoIvYkeqtklqqieTt3hFxlc?usp=drive_link"
-                            target="_blank" class="projects__link">
-                            <i class="ri-external-link-line"></i> View
+                            target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-file-text-line"></i> Documentation
                         </a>
                     </div>
                 </article>
@@ -586,7 +614,7 @@
                             class="projects__img" loading="lazy">
 
                         <a href="https://drive.google.com/file/d/1lRIF1tDP3QejpNM71Y9y1D8MEclYbkiw/view?usp=drive_link"
-                            class="projects__button button" target="_blank" rel="noopener" aria-label="Open live demo">
+                            class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="View project documentation">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -603,13 +631,13 @@
 
                     <div class="projects__buttons">
                         <a href="https://github.com/nikhiltaprania/main-brake-9977" target="_blank"
-                            class="projects__link">
-                            <i class="ri-github-line"></i> GitHub
+                            rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-github-line"></i> Source Code
                         </a>
 
                         <a href="https://drive.google.com/file/d/1lRIF1tDP3QejpNM71Y9y1D8MEclYbkiw/view?usp=drive_link"
-                            target="_blank" class="projects__link">
-                            <i class="ri-external-link-line"></i> View
+                            target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-file-text-line"></i> Documentation
                         </a>
                     </div>
                 </article>
@@ -620,7 +648,7 @@
                             class="projects__img" loading="lazy">
 
                         <a href="https://preeminent-souffle-48a21a.netlify.app/" class="projects__button button"
-                            target="_blank" rel="noopener" aria-label="Open live demo">
+                            target="_blank" rel="noopener noreferrer" aria-label="Open live demo">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -637,12 +665,12 @@
 
                     <div class="projects__buttons">
                         <a href="https://github.com/nikhiltaprania/green-value-83" target="_blank"
-                            class="projects__link">
-                            <i class="ri-github-line"></i> GitHub
+                            rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-github-line"></i> Source Code
                         </a>
 
-                        <a href="https://preeminent-souffle-48a21a.netlify.app/" target="_blank" class="projects__link">
-                            <i class="ri-external-link-line"></i> View
+                        <a href="https://preeminent-souffle-48a21a.netlify.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-external-link-line"></i> Live Demo
                         </a>
                     </div>
                 </article>
@@ -653,7 +681,7 @@
                             class="projects__img" loading="lazy">
 
                         <a href="https://sunny-cucurucho-f788c1.netlify.app/" class="projects__button button"
-                            target="_blank" rel="noopener" aria-label="Open live demo">
+                            target="_blank" rel="noopener noreferrer" aria-label="Open live demo">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -670,12 +698,12 @@
 
                     <div class="projects__buttons">
                         <a href="https://github.com/nikhiltaprania/devilish-bomb-2241" target="_blank"
-                            class="projects__link">
-                            <i class="ri-github-line"></i> GitHub
+                            rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-github-line"></i> Source Code
                         </a>
 
-                        <a href="https://sunny-cucurucho-f788c1.netlify.app/" target="_blank" class="projects__link">
-                            <i class="ri-external-link-line"></i> View
+                        <a href="https://sunny-cucurucho-f788c1.netlify.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
+                            <i class="ri-external-link-line"></i> Live Demo
                         </a>
                     </div>
                 </article>
@@ -749,22 +777,27 @@
                         </div>
 
                         <div class="contact__social-links">
-                            <a href="https://wa.me/919719768185" target="_blank" rel="noopener"
+                            <a href="mailto:nikhiltaprania@gmail.com" class="contact__social-link email"
+                                aria-label="Email">
+                                <i class="ri-mail-line"></i>
+                            </a>
+
+                            <a href="https://wa.me/919719768185" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link whatsapp" aria-label="WhatsApp">
                                 <i class="ri-whatsapp-line"></i>
                             </a>
 
-                            <a href="https://www.linkedin.com/in/nikhil-kumar-5bb7a52b9/" target="_blank" rel="noopener"
+                            <a href="https://www.linkedin.com/in/nikhil-kumar-5bb7a52b9/" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link linkedin" aria-label="LinkedIn">
                                 <i class="ri-linkedin-box-line"></i>
                             </a>
 
-                            <a href="https://github.com/nikhiltaprania" target="_blank" rel="noopener"
+                            <a href="https://github.com/nikhiltaprania" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link github" aria-label="GitHub">
                                 <i class="ri-github-line"></i>
                             </a>
 
-                            <a href="https://leetcode.com/u/nikhiltaprania/" target="_blank" rel="noopener"
+                            <a href="https://leetcode.com/u/nikhiltaprania/" target="_blank" rel="noopener noreferrer"
                                 class="contact__social-link leetcode" aria-label="LeetCode">
                                 <i class="ri-code-s-slash-line"></i>
                             </a>
@@ -803,6 +836,6 @@
 <!--=============== EMAIL JS ===============-->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <!--=============== MAIN JS ===============-->
-<script src="./js/main.js"></script>
+<script src="./js/main.js?v=20261116d"></script>
 
 </html>
